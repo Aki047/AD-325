@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1652495-8a99-4626-832a-81009cfb713c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 9/TextWise Solutions/TextWise Solutions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 9/Patient Records.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
     "Python.Financial Growth Trends.executor": "Run",
     "Python.Inventory Management System Update.executor": "Run",
     "Python.Optimizing Sales Report.executor": "Run",
+    "Python.Patient Records.executor": "Run",
     "Python.Removing Outdated Products.executor": "Run",
     "Python.TextWise Solutions.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -112,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710922672704</updated>
       <workItem from="1710922674315" duration="39000" />
-      <workItem from="1710985707643" duration="21965000" />
+      <workItem from="1710985707643" duration="24391000" />
     </task>
     <servers />
   </component>
@@ -126,6 +126,7 @@
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Binary_Tree.coverage" NAME="Financial Binary Tree Coverage Results" MODIFIED="1710999204060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 7" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Removing_Outdated_Products.coverage" NAME="Removing Outdated Products Coverage Results" MODIFIED="1711005579340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3/Streamlining Product Catalog by Removing Outdated Products" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$TextWise_Solutions.coverage" NAME="TextWise Solutions Coverage Results" MODIFIED="1711007703528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9/TextWise Solutions" />
+    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Patient_Records.coverage" NAME="Patient Records Coverage Results" MODIFIED="1711012416136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Inventory_Management_System_Update.coverage" NAME="Inventory Management System Update Coverage Results" MODIFIED="1710996095988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Inventory Management System Update" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Binary_Tree_Traversal.coverage" NAME="Binary Tree Traversal Coverage Results" MODIFIED="1710997197117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
   </component>
