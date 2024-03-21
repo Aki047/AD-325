@@ -1,43 +1,17 @@
 """
-Problem Statement: write a program that removes all occurrences of a specified product (represented by an ID) from the company's product catalog array. The program should modify the array in place and return the count of remaining products.
+Enhancing internal tool through recursion, The core task is to reverse a string where the function calling itself with a subset of the original problem until a base case is reached.
 
-The task involves removing all instances of a given product ID (discontinuedID) from the product catalog array (productCatalog).
 
-Q's
-Can the productCatalog array contain duplicate product IDs, and should all duplicates be removed?
-Are the product IDs in the productCatalog sorted or unsorted?
-How should the function handle cases where the discontinuedID is not present?
+Qs
+Input Constraints: Are there any limitations on the string's length? Knowing this helps understand the recursion depth.
+Character Set: Does the string include only ASCII characters, or should it support Unicode (including emojis, etc.)?
+Performance Expectations: What is the expected performance in terms of time and space complexity? This could influence optimization strategies.
+
+Time Complexity: O(n), Space Complexity: O(n)
+
 """
-
-def Discontinued_Products(productCatalog, discontinuedID):
-    if not isinstance(productCatalog, list) or not isinstance(discontinuedID, int):
-        print("Error: Invalid input data types.")
-        return -1
-
-    if not productCatalog:
-        print("The product catalog is empty.")
-        return 0
-
-    writer = 0
-
-    foundDiscontinued = False
-
-    for reader in range(len(productCatalog)):
-        if productCatalog[reader] == discontinuedID:
-            foundDiscontinued = True
-        else:
-            productCatalog[writer] = productCatalog[reader]
-            writer += 1
-
-    if not foundDiscontinued:
-        print("Warning: Discontinued product ID was not found in the catalog.")
-
-    for i in range(writer, len(productCatalog)):
-        productCatalog[i] = None
-
-    return writer
-
-productCatalog1 = [1003, 1002, 1002, 1003]
-discontinuedID1 = 1003
-print("Remaining count:", Discontinued_Products(productCatalog1, discontinuedID1), ", Updated Catalog:",
-      productCatalog1)
+def reverse_string(s):
+    if len(s) <= 1:
+        return s
+    return reverse_string(s[1:]) + s[0]
+print(reverse_string("Hello Dolly"))
