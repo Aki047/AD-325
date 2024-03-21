@@ -1,34 +1,37 @@
-import math
-
-
-
-def howManyRabbits (forest):
-
-if not forest:
-    raise ValueError("The array is empty. Please update array and try again")
+def howManyRabbits(forest):
+    if not forest:
+        raise ValueError("The array is empty. Please update the array and try again.")
 
     maxRabbit_Count = 0
-
     current_Count = 0
-
-    has_rabbit = False # check forest for at least one rabbit
+    has_rabbit = False
 
     for element in forest:
-        element = element.lower();
-
-
-        if element == 'rabbit':
-            current_Count =+1
+        if element.lower() == 'rabbit':
+            current_Count += 1
             maxRabbit_Count = max(maxRabbit_Count, current_Count)
         else:
             current_Count = 0
 
+    if has_rabbit:
+        print("No rabbits found in the list.")
     return maxRabbit_Count
 
-forest = ["rabbit, rabbit, rock, rabbit, rock rock"]
-
+forest= ["Rabbit", "rAbBit", "rabbit", "RABBIT", "RoCk"]
 result = howManyRabbits(forest)
 print(result)
+
+# Example forest lists
+forest_with_rabbits = ["rabbit", "rabbit", "rock", "rabbit", "rock", "rock"]
+forest_without_rabbits = ["rock", "tree", "grass", "rock", "rock"]
+
+# Demonstrating the function with a list that includes rabbits
+result_with_rabbits = howManyRabbits(forest_with_rabbits)
+print("Maximum consecutive rabbits (with rabbits):", result_with_rabbits)
+
+# Demonstrating the function with a list that does not include rabbits
+result_without_rabbits = howManyRabbits(forest_without_rabbits)
+print("Maximum consecutive rabbits (without rabbits):", result_without_rabbits)
 
 '''
 Process
