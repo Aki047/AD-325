@@ -1,32 +1,43 @@
 """
-Assignment: Optimizing Sales Report Data By Removing Duplicate Entries
+Problem Statement: write a program that removes all occurrences of a specified product (represented by an ID) from the company's product catalog array. The program should modify the array in place and return the count of remaining products.
 
-Removes duplicate entries from sales data in-place, ensuring each unique sales figure appears only once.
-Maintains the original order of sales figures.
+The task involves removing all instances of a given product ID (discontinuedID) from the product catalog array (productCatalog).
 
-:param salesData: List of daily sales figures, sorted in non-decreasing order.
-:return: Count of unique sales figures in salesData.
+Q's
+Can the productCatalog array contain duplicate product IDs, and should all duplicates be removed?
+Are the product IDs in the productCatalog sorted or unsorted?
+How should the function handle cases where the discontinuedID is not present?
 """
 
+def Discontinued_Products(productCatalog, discontinuedID):
+    if not isinstance(productCatalog, list) or not isinstance(discontinuedID, int):
+        print("Error: Invalid input data types.")
+        return -1
 
-def removeDuplicatesFromSalesData(salesData):
-    if not salesData:
-        print("No sales figures, try again with data")
+    if not productCatalog:
+        print("The product catalog is empty.")
         return 0
 
-    uniqueIndex = 0
+    writer = 0
 
-    for currentIndex in range(1, len(salesData)):
-        if salesData[currentIndex] != salesData[uniqueIndex]:
-            uniqueIndex += 1
-            salesData[uniqueIndex] = salesData[currentIndex]
+    foundDiscontinued = False
 
-    return uniqueIndex +1
+    for reader in range(len(productCatalog)):
+        if productCatalog[reader] == discontinuedID:
+            foundDiscontinued = True
+        else:
+            productCatalog[writer] = productCatalog[reader]
+            writer += 1
 
-salesData1 = [200, 200, 300]
-uniqueCount1 = removeDuplicatesFromSalesData(salesData1)
-print(f"Example 1 - Unique Count: {uniqueCount1}, Modified salesData: {salesData1}")
+    if not foundDiscontinued:
+        print("Warning: Discontinued product ID was not found in the catalog.")
 
-salesData2 = [150, 150, 200, 200, 200, 250, 250, 300, 300, 350]
-uniqueCount2 = removeDuplicatesFromSalesData(salesData2)
-print(f"Example 2 - Unique Count: {uniqueCount2}, Modified salesData: {salesData2}")
+    for i in range(writer, len(productCatalog)):
+        productCatalog[i] = None
+
+    return writer
+
+productCatalog1 = [1003, 1002, 1002, 1003]
+discontinuedID1 = 1003
+print("Remaining count:", Discontinued_Products(productCatalog1, discontinuedID1), ", Updated Catalog:",
+      productCatalog1)
