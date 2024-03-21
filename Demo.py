@@ -1,31 +1,32 @@
 """
-Assignment: Decision Support System for a Financial Institution Using Binary Tree
+Assignment: Optimizing Sales Report Data By Removing Duplicate Entries
 
-Problem Statement: Inventory Management System Update
-The institution uses a decision support system to guide customer service representatives through a series of questions to identify the most suitable financial product for a customer's needs. This system is structured as a binary tree, where each node represents a question, and the two branches from each question lead to the next questions based on the customer's responses (Yes/No). It offers loans, mortgages, investments, and insurance.
+Removes duplicate entries from sales data in-place, ensuring each unique sales figure appears only once.
+Maintains the original order of sales figures.
+
+:param salesData: List of daily sales figures, sorted in non-decreasing order.
+:return: Count of unique sales figures in salesData.
 """
 
 
-class TreeNode:
-    def __init__(self, question, left=None, right=None):
-        self.question = question  # The question at this node
-        self.left = left  # Yes branch
-        self.right = right  # No branch
+def removeDuplicatesFromSalesData(salesData):
+    if not salesData:
+        print("No sales figures, try again with data")
+        return 0
 
-def maxDepth(root):
-        if not root:
-            return 0
-        else:
-            left_depth = maxDepth(root.left)
-            right_depth = maxDepth(root.right)
-            return max(left_depth, right_depth) + 1
+    uniqueIndex = 0
 
-root = TreeNode("Do you have an existing account with us?",
-                TreeNode("Are you looking for a loan product?",
-                         TreeNode("Do you prefer low interest over high credit limit?"),
-                         TreeNode("Are you interested in mortgage services?")),
-                TreeNode("Are you interested in investment options?",
-                         TreeNode("Are you a risk-averse investor?"),
-                         TreeNode("Are you looking for insurance products?")))
+    for currentIndex in range(1, len(salesData)):
+        if salesData[currentIndex] != salesData[uniqueIndex]:
+            uniqueIndex += 1
+            salesData[uniqueIndex] = salesData[currentIndex]
 
-print(f"Maximum depth of the decision tree: {maxDepth(root)}")
+    return uniqueIndex +1
+
+salesData1 = [200, 200, 300]
+uniqueCount1 = removeDuplicatesFromSalesData(salesData1)
+print(f"Example 1 - Unique Count: {uniqueCount1}, Modified salesData: {salesData1}")
+
+salesData2 = [150, 150, 200, 200, 200, 250, 250, 300, 300, 350]
+uniqueCount2 = removeDuplicatesFromSalesData(salesData2)
+print(f"Example 2 - Unique Count: {uniqueCount2}, Modified salesData: {salesData2}")

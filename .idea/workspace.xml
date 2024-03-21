@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1652495-8a99-4626-832a-81009cfb713c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 2/Inventory Management System Update/Inventory Management System Update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week 7/Financial Binary Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 2/Analyzing Financial Growth Trends/Financial Growth Trends.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week 2/Analyzing Financial Growth Trends/Financial Growth Trends.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/inventory management system.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,7 @@
     "Python.Financial Binary Tree.executor": "Run",
     "Python.Financial Growth Trends.executor": "Run",
     "Python.Inventory Management System Update.executor": "Run",
+    "Python.Optimizing Sales Report.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -111,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710922672704</updated>
       <workItem from="1710922674315" duration="39000" />
-      <workItem from="1710985707643" duration="14949000" />
+      <workItem from="1710985707643" duration="17602000" />
     </task>
     <servers />
   </component>
@@ -119,8 +118,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Optimizing_Sales_Report.coverage" NAME="Optimizing Sales Report Coverage Results" MODIFIED="1711002065584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Growth_Trends.coverage" NAME="Financial Growth Trends Coverage Results" MODIFIED="1710992113072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Analyzing Financial Growth Trends" />
-    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1711000826681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1711003162226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Binary_Tree.coverage" NAME="Financial Binary Tree Coverage Results" MODIFIED="1710999204060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 7" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Inventory_Management_System_Update.coverage" NAME="Inventory Management System Update Coverage Results" MODIFIED="1710996095988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Inventory Management System Update" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Binary_Tree_Traversal.coverage" NAME="Binary Tree Traversal Coverage Results" MODIFIED="1710997197117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
