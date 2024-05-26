@@ -41,6 +41,46 @@ def test_merge_customer_data():
     merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
     assert customerData1 == [101, 102, 102, 104, 105, 107]
 
+    # Test case 6: Merging into a larger empty array
+    customerData1 = [0, 0, 0, 0, 0, 0]
+    numRecordsCustomerData1 = 0
+    customerData2 = [101, 102, 103, 104, 105, 106]
+    numRecordsCustomerData2 = 6
+    merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
+    assert customerData1 == [101, 102, 103, 104, 105, 106]
+
+    # Test case 7: Merging with one element larger than all in the other array
+    customerData1 = [1, 3, 5, 0, 0, 0]
+    numRecordsCustomerData1 = 3
+    customerData2 = [6, 7, 8]
+    numRecordsCustomerData2 = 3
+    merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
+    assert customerData1 == [1, 3, 5, 6, 7, 8]
+
+    # Test case 8: Merging with negative numbers
+    customerData1 = [-3, -1, 2, 0, 0, 0]
+    numRecordsCustomerData1 = 3
+    customerData2 = [-2, 0, 1]
+    numRecordsCustomerData2 = 3
+    merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
+    assert customerData1 == [-3, -2, -1, 0, 1, 2]
+
+    # Test case 9: Merging with one array completely greater than the other
+    customerData1 = [1, 2, 3, 0, 0, 0]
+    numRecordsCustomerData1 = 3
+    customerData2 = [4, 5, 6]
+    numRecordsCustomerData2 = 3
+    merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
+    assert customerData1 == [1, 2, 3, 4, 5, 6]
+
+    # Test case 10: Both arrays contain the same elements
+    customerData1 = [1, 1, 1, 0, 0, 0]
+    numRecordsCustomerData1 = 3
+    customerData2 = [1, 1, 1]
+    numRecordsCustomerData2 = 3
+    merge_customer_data(customerData1, numRecordsCustomerData1, customerData2, numRecordsCustomerData2)
+    assert customerData1 == [1, 1, 1, 1, 1, 1]
+
     print("All test cases passed!")
 
 # Run the test cases
