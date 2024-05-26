@@ -2,8 +2,8 @@
 Removes duplicate entries from sales data in-place, ensuring each unique sales figure appears only once.
 Maintains the original order of sales figures.
 
-:param salesData: List of daily sales figures, sorted in non-decreasing order.
-:return: Count of unique sales figures in salesData.
+List of daily sales figures, sorted in non-decreasing order.
+return the Count of unique sales figures in salesData.
 """
 
 
@@ -23,12 +23,3 @@ def removeDuplicatesFromSalesData(salesData):
     # The number of unique sales figures is uniqueIndex + 1 (to account for zero indexing)
     return uniqueIndex + 1
 
-# Example 1
-salesData1 = [200, 200, 300]
-uniqueCount1 = removeDuplicatesFromSalesData(salesData1)
-print(f"Example 1 - Unique Count: {uniqueCount1}, Modified salesData: {salesData1}")
-
-# Example 2
-salesData2 = [150, 150, 200, 200, 200, 250, 250, 300, 300, 350]
-uniqueCount2 = removeDuplicatesFromSalesData(salesData2)
-print(f"Example 2 - Unique Count: {uniqueCount2}, Modified salesData: {salesData2}")
