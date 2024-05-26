@@ -26,7 +26,6 @@ Decrement zeros_to_duplicate to track the remaining available slots.
 If zeros_to_duplicate is zero or negative, simply shift the subsequent elements to the right to maintain array integrity.
 If the current element is not zero, continue without modification.
 '''
-
 import copy
 
 def duplicateZeros(inventory):
@@ -68,21 +67,5 @@ def duplicateZeros(inventory):
 
     # Return the modified inventory and the original inventory
     return modified_inventory, inventory
-
-
-# Test cases
-inventory = [4, 0, 1, 3, 0, 2, 5, 0]
-modified_inventory, original_inventory = duplicateZeros(inventory)
-print("Outside duplicateZeros function:")
-print("Modified Inventory:", modified_inventory)
-print("Original Inventory:", original_inventory)
-
-
-# Test cases
-inventory = [4, 0, 1, 3, 0, 2, 5, 0]
-modified_inventory, original_inventory = duplicateZeros(inventory)
-print("Outside duplicateZeros function:")
-print("Modified Inventory:", modified_inventory)
-print("Original Inventory:", original_inventory)
 
 
