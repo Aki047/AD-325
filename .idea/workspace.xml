@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1652495-8a99-4626-832a-81009cfb713c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 9/Patient Records.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/Selection Sort/Selection_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week 5/Selection Sort/Selection_Sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
     "Python.Demo.executor": "Run",
     "Python.Financial Binary Tree.executor": "Run",
     "Python.Financial Growth Trends.executor": "Run",
+    "Python.Insertion_Sort.executor": "Run",
     "Python.Inventory Management System Update.executor": "Run",
     "Python.Optimizing Sales Report.executor": "Run",
     "Python.Patient Records.executor": "Run",
@@ -50,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ultron/Documents/GitHub/AD-320",
+    "last_opened_file_path": "C:/Users/Ultron/Documents/GitHub",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +69,7 @@
       <recent name="C:\Users\Ultron\Documents\GitHub\AD-325\Week 7\Financial Institution Using Binary Tree" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Insertion_Sort">
     <configuration name="Demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AD-325" />
       <option name="ENV_FILES" value="" />
@@ -90,8 +93,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Insertion_Sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AD-325" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 5/Insertion Sort" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week 5/Insertion Sort/Insertion_Sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Insertion_Sort" />
         <item itemvalue="Python.Demo" />
       </list>
     </recent_temporary>
@@ -113,6 +140,8 @@
       <updated>1710922672704</updated>
       <workItem from="1710922674315" duration="39000" />
       <workItem from="1710985707643" duration="24391000" />
+      <workItem from="1713125667133" duration="43000" />
+      <workItem from="1716855772350" duration="3598000" />
     </task>
     <servers />
   </component>
@@ -122,11 +151,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Optimizing_Sales_Report.coverage" NAME="Optimizing Sales Report Coverage Results" MODIFIED="1711002065584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Growth_Trends.coverage" NAME="Financial Growth Trends Coverage Results" MODIFIED="1710992113072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Analyzing Financial Growth Trends" />
+    <SUITE FILE_PATH="coverage/Insertion_Sort_py$Insertion_Sort.coverage" NAME="Insertion_Sort Coverage Results" MODIFIED="1716860337375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 5/Insertion Sort" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1711008557605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Binary_Tree.coverage" NAME="Financial Binary Tree Coverage Results" MODIFIED="1710999204060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 7" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Removing_Outdated_Products.coverage" NAME="Removing Outdated Products Coverage Results" MODIFIED="1711005579340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3/Streamlining Product Catalog by Removing Outdated Products" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$TextWise_Solutions.coverage" NAME="TextWise Solutions Coverage Results" MODIFIED="1711007703528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9/TextWise Solutions" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Patient_Records.coverage" NAME="Patient Records Coverage Results" MODIFIED="1711012416136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
+    <SUITE FILE_PATH="coverage/Insertion_Sort_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1716856556211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Inventory_Management_System_Update.coverage" NAME="Inventory Management System Update Coverage Results" MODIFIED="1710996095988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Inventory Management System Update" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Binary_Tree_Traversal.coverage" NAME="Binary Tree Traversal Coverage Results" MODIFIED="1710997197117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
   </component>
