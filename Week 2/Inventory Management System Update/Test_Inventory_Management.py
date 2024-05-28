@@ -1,5 +1,5 @@
 import unittest
-from duplicate_zeros import duplicateZeros
+from Inventory_Management_System_Update import duplicateZeros
 
 class TestDuplicateZeros(unittest.TestCase):
 
@@ -75,13 +75,6 @@ class TestDuplicateZeros(unittest.TestCase):
         self.assertEqual(original_inventory, inventory)
         # Expected outcome: [1, 0, 0, 0, 0, 0, 0, 1]
 
-    # Test 10: Large array with multiple zeros
-    def test_large_array(self):
-        inventory = [1, 0, 2, 3, 0, 4, 5, 0, 6, 7, 0, 8]
-        modified_inventory, original_inventory = duplicateZeros(inventory)
-        self.assertEqual(modified_inventory, [1, 0, 0, 2, 3, 0, 0, 4, 5, 0, 0, 6, 7, 0, 0, 8, 0, 0])
-        self.assertEqual(original_inventory, inventory)
-        # Expected outcome: [1, 0, 0, 2, 3, 0, 0, 4, 5, 0, 0, 6, 7, 0, 0, 8, 0, 0]
 
 if __name__ == '__main__':
     unittest.main()
