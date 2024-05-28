@@ -1,3 +1,17 @@
+'''
+Process
+iterate through array, check if in four_Legs, if in four_legs +1 to animal count
+return and print animalCount
+
+Questions:
+What if array empty
+is it case sensitive
+if no fourlegged animals what return
+do we need to account for specific category of animals
+if so scaleablity for other leg counts
+
+Time and Space Complexity:
+'''
 
 
 
@@ -11,6 +25,8 @@ def howManyLegs(animals, four_Legs):
     has_four_legged_animal = False  # Flag to check if at least one four-legged animal is found
 
     for animal in animals:
+        if animal == "":
+            raise ValueError("Missing animal name in the array.")
         if animal in four_Legs:  # Check if the animal is in the list of four-legged animals
             animalCount += 1
             has_four_legged_animal = True
@@ -20,24 +36,21 @@ def howManyLegs(animals, four_Legs):
 
     return animalCount
 
-animals = ['lion', 'monkey', 'snake', 'deer', 'elephant']
-four_Legs = ['lion', 'deer', 'elephant', 'horse', 'dog', 'cat']
-two_Legs = ['monkey', 'parrot', 'ostrich']
-zero_Legs =['snake', 'worm']
-multiple_Legs = ['spider', 'ant', 'centipede']
+if __name__ == "__main__":
+    animals = ['lion', 'monkey', 'snake', 'deer', 'elephant']
+    four_Legs = ['lion', 'deer', 'elephant', 'horse', 'dog', 'cat']
+    two_Legs = ['monkey', 'parrot', 'ostrich']
+    zero_Legs = ['snake', 'worm']
+    multiple_Legs = ['spider', 'ant', 'centipede']
 
-result = howManyLegs(animals, four_Legs)
-print(result)
+    result = howManyLegs(animals, four_Legs)
+    print("Total number of 4-legged animals: ", result)
 
 '''
-Process
-iterate through array, check if in four_Legs, if in four_legs +1 to animal count
-return and print animalCount
+Test Cases:
 
-Questions:
-What if array empty
-is it case sensitive
-if no fourlegged animals what return
-do we need to account for specific category of animals
-if so scaleablity for other leg counts
+Only non-four-legged animals
+Four-legged animals not in list
+blank array
+
 '''

@@ -43,7 +43,7 @@ class TestHowManyLegs(unittest.TestCase):
     # Test 7: Mixed animals with duplicates
     def test_mixed_with_duplicates(self):
         animals = ['lion', 'deer', 'deer', 'elephant', 'cat', 'cat']
-        self.assertEqual(howManyLegs(animals, self.four_Legs), 5)
+        self.assertEqual(howManyLegs(animals, self.four_Legs), 6)
 
     # Test 8: Case sensitivity check
     def test_case_sensitivity(self):
@@ -58,7 +58,8 @@ class TestHowManyLegs(unittest.TestCase):
     # Test 10: Empty strings in list
     def test_empty_strings_in_list(self):
         animals = ['lion', '', 'deer']
-        self.assertEqual(howManyLegs(animals, self.four_Legs), 2)
+        with self.assertRaises(ValueError):
+            howManyLegs(animals, self.four_Legs)
 
 if __name__ == '__main__':
     unittest.main()
