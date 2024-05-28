@@ -1,21 +1,17 @@
 '''
-Purpose:
-
 Process:
-define function with 4 parameters:
-    customerData1: A list containing customer data, with extra space at the end to accommodate data from customerData2.
-    numRecordsCustomerData1: The number of valid records initially present in customerData1.
-    customerData2: A list containing customer data to be merged into customerData1.
-    numRecordsCustomerData2: The number of valid records in customerData2.
-
-Initialize pointers to the last valid elements of both arrays
-#Start merging from the end of both arrays
+define function
+2 pointer initilized, point to last element in customerData1 & customerData2
+use loop to fill customerData1 from end to beginning
+compare the elements indicated by the pointers and place the larger element at the current position in customerData1
+repeat until all elements are merged
 
 Questions:
-
+How does it handle duplicates
+what validation checks should it perform
+max array or time compelxity requirments
 Error Handling:
-
-
+    if one list is <0 then break
 Test Cases:
     # Test case 1: Both arrays are empty
     # Test case 2: One array is empty
@@ -27,6 +23,8 @@ Test Cases:
     # Test case 8: Merging with negative numbers
     # Test case 9: Merging with one array completely greater than the other
     # Test case 10: Both arrays contain the same elements
+Time Complexity
+o(n+m) customerData1 = n, and customerData2 =m
 
 '''
 
