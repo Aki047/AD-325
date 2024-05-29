@@ -1,15 +1,27 @@
 '''
-Problem Statement: write a program that removes all occurrences of a specified product (represented by an ID) from the company's product catalog array. The program should modify the array in place and return the count of remaining products.
+Problem Statement: write a program that removes all occurrences of a specified product (represented by an ID) from the company's product catalog array. It should modify the array in place and return the count of remaining products.
 
 The task involves removing all instances of a given product ID (discontinuedID) from the product catalog array (productCatalog).
 
-Q's
+Process: 
+Define function
+Initialize variables set writer to 0 & foundDiscontinued to false
+go through catalog, Loop through each product ID in productCatalog using a for loop.
+If the current product ID matches discontinuedID, set foundDiscontinued to True.If it does not match, write the current product ID to the position indicated by writer and increment writer.
+Check for discontinuedID
+Clear remaining elements
+Return the Count of Remaining Products:
+
+Q's:
 Can the productCatalog array contain duplicate product IDs, and should all duplicates be removed?
 Are the product IDs in the productCatalog sorted or unsorted?
 How should the function handle cases where the discontinuedID is not present?
 
-'''
+Time and Space Complexity:
+Time Complexity: O(n), Iterates exactly once for each element
+Space Complexity: O(1), modifies the list in place and does not use any additional data structures
 
+'''
 
 def Discontinued_Products(productCatalog, discontinuedID):
     # Validate the input data
@@ -31,7 +43,7 @@ def Discontinued_Products(productCatalog, discontinuedID):
             productCatalog[writer] = productCatalog[reader]
             writer += 1
 
-    # is discontinuedID was present in the catalog
+    # Check if discontinuedID was present in the catalog
     if not foundDiscontinued:
         print("Warning: Discontinued product ID was not found in the catalog.")
 
@@ -40,11 +52,3 @@ def Discontinued_Products(productCatalog, discontinuedID):
         productCatalog[i] = None  # Assuming clearing with None is acceptable
 
     return writer  # The writer's position also represents the count of remaining products
-
-
-# Example usage
-productCatalog1 = [1003, 1002, 1002, 1003]
-discontinuedID1 = 1003
-print("Remaining count:", Discontinued_Products(productCatalog1, discontinuedID1), ", Updated Catalog:",
-      productCatalog1)
-
