@@ -1,5 +1,6 @@
 import unittest
 
+from Removing_Duplicates import removeDuplicatesFromSalesData
 class TestRemoveDuplicatesFromSalesData(unittest.TestCase):
 
     def test_case_1(self):
