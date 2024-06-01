@@ -11,6 +11,7 @@ Questions:
     Check & display message with order details
     What if orders are submitted at same day and time how to sort
     What if queue is empty
+    What data type for Order attributes?
 
 Process:
     Create Class Order: ID, Customer name, details, date, time
@@ -37,8 +38,8 @@ Edge Cases:
     Order Attribute validation
 
 Time and Space Complexity:
-Time: O(n), n is the number of orders
-Space:O(n), Order Storage
+Time: O(n), n is the number of orders, transversed only 1 time
+Space:O(n), constant amount of extra space for the prev, current, and next_node pointers.
 
 '''
 
@@ -71,9 +72,9 @@ class Order_Queue:
     def __init__(self):
         # Initialize an empty Order_Queue.
         self.head = None  # Head of the list, initially set to None
-
+    # Append a new order to the list in sorted order.
     def append(self, order):
-        # Append a new order to the list in sorted order.
+
         if self.head is None or order.get_datetime() < self.head.get_datetime():
             # If the list is empty or the new order is older than the head, insert at the head
             order.next = self.head
@@ -115,5 +116,4 @@ class Order_Queue:
             prev = current  # Move prev and current one step forward
             current = next_node
         self.head = prev  # Reset the head to the new first node
-
 

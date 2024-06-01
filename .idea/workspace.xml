@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1652495-8a99-4626-832a-81009cfb713c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System/Simple_Version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System/Test_E-Commerce.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 10/Text_Editor_with_Undo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 10/Ticket System.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 7/Binary Tree Traversal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 7/Project Report Binary Tree Traversal and Construction.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 9/TextWise Solutions/In-Class Activity_ TextWise Solutions.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 9/TextWise Solutions/TextWise Solutions.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ultron/Documents/GitHub/AD-325/Week 2",
+    "last_opened_file_path": "C:/Users/Ultron/Documents/GitHub/AD-325/Week 6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,7 +78,7 @@
       <recent name="C:\Users\Ultron\Documents\GitHub\AD-325\Week 7\Financial Institution Using Binary Tree" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_empty_order_queue">
     <configuration name="Python tests for Test_E-Commerce.TestOrderQueue.test_empty_order_queue" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AD-325" />
       <option name="ENV_FILES" value="" />
@@ -198,6 +190,8 @@
       <workItem from="1713125667133" duration="43000" />
       <workItem from="1716855772350" duration="4198000" />
       <workItem from="1717037905409" duration="12853000" />
+      <workItem from="1717277824231" duration="36000" />
+      <workItem from="1717278218098" duration="50000" />
     </task>
     <servers />
   </component>
