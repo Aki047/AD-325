@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1652495-8a99-4626-832a-81009cfb713c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System/Simple_Version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System/Test_E-Commerce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 10/Text_Editor_with_Undo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 10/Ticket System.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 7/Binary Tree Traversal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 7/Project Report Binary Tree Traversal and Construction.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 9/TextWise Solutions/In-Class Activity_ TextWise Solutions.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 9/TextWise Solutions/TextWise Solutions.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +45,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_empty_order_queue.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_empty_strings_in_attributes.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_missing_attributes.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_none_order.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_order_attribute_validation.executor": "Run",
+    "Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_remove_order.executor": "Run",
+    "Python tests.Python tests in Test_E-Commerce.py.executor": "Run",
     "Python.Binary Tree Traversal.executor": "Run",
     "Python.Demo.executor": "Run",
+    "Python.E-Commerce_Order_Processing.executor": "Run",
+    "Python.E_Commerce_Order_Processing.executor": "Run",
     "Python.Financial Binary Tree.executor": "Run",
     "Python.Financial Growth Trends.executor": "Run",
     "Python.Insertion_Sort.executor": "Run",
@@ -45,6 +64,7 @@
     "Python.Optimizing Sales Report.executor": "Run",
     "Python.Patient Records.executor": "Run",
     "Python.Removing Outdated Products.executor": "Run",
+    "Python.Simple_Version.executor": "Run",
     "Python.TextWise Solutions.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -66,57 +86,95 @@
       <recent name="C:\Users\Ultron\Documents\GitHub\AD-325\Week 7\Financial Institution Using Binary Tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Insertion_Sort">
-    <configuration name="Demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Python tests for Test_E-Commerce.TestOrderQueue.test_empty_order_queue" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AD-325" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Ultron\Documents\GitHub\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.12 (GitHub)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_E-Commerce.TestOrderQueue.test_empty_order_queue&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Insertion_Sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test_E-Commerce.TestOrderQueue.test_empty_strings_in_attributes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AD-325" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 5/Insertion Sort" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week 5/Insertion Sort/Insertion_Sort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_E-Commerce.TestOrderQueue.test_empty_strings_in_attributes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test_E-Commerce.TestOrderQueue.test_missing_attributes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AD-325" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_E-Commerce.TestOrderQueue.test_missing_attributes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test_E-Commerce.TestOrderQueue.test_remove_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AD-325" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_E-Commerce.TestOrderQueue.test_remove_order&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in Test_E-Commerce.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AD-325" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Week 6/E-Commerce Order Processing System/Test_E-Commerce.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Insertion_Sort" />
-        <item itemvalue="Python.Demo" />
+        <item itemvalue="Python tests.Python tests in Test_E-Commerce.py" />
+        <item itemvalue="Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_empty_order_queue" />
+        <item itemvalue="Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_missing_attributes" />
+        <item itemvalue="Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_empty_strings_in_attributes" />
+        <item itemvalue="Python tests.Python tests for Test_E-Commerce.TestOrderQueue.test_remove_order" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +197,7 @@
       <workItem from="1710985707643" duration="24391000" />
       <workItem from="1713125667133" duration="43000" />
       <workItem from="1716855772350" duration="4198000" />
+      <workItem from="1717037905409" duration="12853000" />
     </task>
     <servers />
   </component>
@@ -148,14 +207,17 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Optimizing_Sales_Report.coverage" NAME="Optimizing Sales Report Coverage Results" MODIFIED="1711002065584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Growth_Trends.coverage" NAME="Financial Growth Trends Coverage Results" MODIFIED="1710992113072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Analyzing Financial Growth Trends" />
-    <SUITE FILE_PATH="coverage/Insertion_Sort_py$Insertion_Sort.coverage" NAME="Insertion_Sort Coverage Results" MODIFIED="1716860337375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 5/Insertion Sort" />
+    <SUITE FILE_PATH="coverage/E_Commerce_Order_Processing_py$.coverage" NAME=" Coverage Results" MODIFIED="1717050882989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1711008557605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Financial_Binary_Tree.coverage" NAME="Financial Binary Tree Coverage Results" MODIFIED="1710999204060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 7" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Removing_Outdated_Products.coverage" NAME="Removing Outdated Products Coverage Results" MODIFIED="1711005579340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 3/Streamlining Product Catalog by Removing Outdated Products" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$TextWise_Solutions.coverage" NAME="TextWise Solutions Coverage Results" MODIFIED="1711007703528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9/TextWise Solutions" />
-    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Patient_Records.coverage" NAME="Patient Records Coverage Results" MODIFIED="1711012416136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
     <SUITE FILE_PATH="coverage/Insertion_Sort_py$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1716856556211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Inventory_Management_System_Update.coverage" NAME="Inventory Management System Update Coverage Results" MODIFIED="1710996095988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 2/Inventory Management System Update" />
     <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Binary_Tree_Traversal.coverage" NAME="Binary Tree Traversal Coverage Results" MODIFIED="1710997197117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
+    <SUITE FILE_PATH="coverage/E_Commerce_Order_Processing_py$E_Commerce_Order_Processing.coverage" NAME="E_Commerce_Order_Processing Coverage Results" MODIFIED="1717050123923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+    <SUITE FILE_PATH="coverage/Insertion_Sort_py$Insertion_Sort.coverage" NAME="Insertion_Sort Coverage Results" MODIFIED="1716860337375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 5/Insertion Sort" />
+    <SUITE FILE_PATH="coverage/E_Commerce_Order_Processing_py$Simple_Version.coverage" NAME="Simple_Version Coverage Results" MODIFIED="1717051469356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 6/E-Commerce Order Processing System" />
+    <SUITE FILE_PATH="coverage/Financial_Growth_Trends_py$Patient_Records.coverage" NAME="Patient Records Coverage Results" MODIFIED="1711012416136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week 9" />
   </component>
 </project>
