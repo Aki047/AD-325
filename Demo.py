@@ -1,110 +1,80 @@
 """
-Purpose:
-Ordering system for e-commerce where orders are processed sequentially, oldest to newest
-reverse the ordering system so newest is processed first, done with Singly Linked List
+Problem:
+Develop a function that analyzes a patient's health record, represented as a singly linked list, and determines whether the sequence of health metrics recorded over a period exhibits a symmetrical pattern. This symmetry could indicate a return to a baseline health status or the recurrence of a condition in a cyclic manner.
 
 Questions:
-Size of order list?
-The format for the order:
-    orderID, Customer details, order details, order date and order time
-What if Order_Que is empty? Should it check and break?
-How to handle Duplicate orders?
-What if an order attribute is missiing?
-Check & display message with order details
-What if orders are submitted at same day and time how to sort
+    What are the constraints on the health metric values? Specific ranges or types of values
+    What is the expected length of the linked list?
+    Should an empty list or a list with only one node be considered symmetric by default?
+    Specific time or space complexity we need to adhere to
+    Need to preserve the original linked list structure after the function execution
+
 Process:
-    Create Class Order: ID, Customer name, details, date, time
-    Return a string representation of the Order object.
-    Combine order_date and order_time into a datetime object for comparison
-    Initialize an empty Order_Queue.
-    Append a new order to the end of the list, if empty, set the new order as the head, sort by date and time
-        Traverse the list to find the correct position for the new order
-    Print out the list of orders from the first to the last.
-    Reverse the linked list so that the last order becomes the first and vice versa.
+    create a ListNode class
+    implement the isHealthRecordSymmetric function
+        Find the middle of the linked list using the fast and slow pointer
+        Reverse the second half of the linked list.
+        Compare the first half with the reversed second half.
+        Restore the list to its original state
 
 Test Cases:
-    Adding orders to the linked list.
-    Displaying the list of orders in the order they were added.
-    Reversing the linked list.
-    Displaying the list of orders after reversal to ensure the most recent order is processed first
+    Even symmetric list
+    Not symmetric list
+    Two elements symmetric
+    Invalid input (not a ListNode or None)
+    Non-symmetric list with repeated values
 Edge Cases:
-    Empty Order Queue
-    Single Order
-    Duplicate Order
-    Missing Attributes
+
 
 Time and Space Complexity:
-Time: O(n), n is the number of orders
-Space:O(1), Order Storage
+Time = O(n),
+space = O(1), extra space used does not depend on the size of the input list
 
 """
 
-class Order:
-    def __init__(self, order_id, customer_details, order_details, order_date, order_time):
-        self.order_id = order_id
-        self.customer_details = customer_details
-        self.order_details = order_details
-        self.order_date = order_date
-        self.order_time = order_time
-        self.next = None  # Points to the next order in the list
+#create a ListNode class
+class ListNode:
+    def __init__(self, value=0, next=None):
+        self.value = value
+        self.next = next
 
-    def __str__(self):
-        return (f"Order ID: {self.order_id}, Customer: {self.customer_details}, "
-                f"Order Details: {self.order_details}, Order Date: {self.order_date}, "
-                f"Order Time: {self.order_time}")
+#implement the isHealthRecordSymmetric function
+def isHealthRecordSymmetric(head: ListNode) -> bool:
+    if not isinstance(head, (ListNode, type(None))):
+        raise ValueError("Input must be a ListNode or None")
+# Find the middle of the linked list
+    if head is None or head.next is None:
+        return True
+    slow, fast = head, head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
 
-    def get_datetime(self):
-        return datetime.strptime(f"{self.order_date} {self.order_time}", "%Y-%m-%d %I:%M %p")
+# Reverse the second half of the linked list
+    prev = None
+    mid = slow
+    while slow:
+        next_node = slow.next
+        slow.next = prev
+        prev = slow
+        slow = next
+# Compare the first and the second half
+    left, right = head, prev
+    is_symmetric = True
+    while right:
+        if left.value != right.value:
+            is_symmetric = False
+            break
+        left = left.next
+        right = right.next
 
-class Order_Queue:
-# define class attributes, start empty que
-def __init__(self):
-    self.head = None
+# Restore the list to its original state
+slow, prev = mid, None
+    while slow:
+        next_node = slow.next
+        slow.next = prev
+        prev = slow
+        slow = next_node
 
-#append method
-    def append(self, order):
-        # if the list is empty place at position 1 if not
-        if self.head is None or order.get_datetime() < self.head.get_datetime():
-            order.next = self.head
-            self.head = order
-
-        else:
-            # transverse list, find position
-            current = self.head
-            while current.next is not None and current.next.get_datetime() <= order.get_datetime():
-                current = current.next
-            order.next = current.next
-            current.next = order
-
-    # Packing list
-    def Packing_List(self):
-        orders = []
-        current = self.head
-        while current is not None:
-            orders.append(str(current))
-            current = current.next
-
-            print(orders)
-        return orders
-
-# Reverse the linked list so that the last order becomes the first and vice versa.
-   def reverse(self):
-       if self.head is None:
-           print("The order queue is empty. No need to reverse.")
-           return
-
-       prev = None
-       current = self.head
-       while current is not None:
-           next_node = current.next
-           current.next = prev
-           prev = current
-           current = next_node
-       self.head = prev
-
-
-
-
-
-
+return is_symmetric
 
